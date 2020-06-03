@@ -23,3 +23,5 @@ Route::get('/datatable','OutboundOrderController@datatable')->name('outbound_ord
 Route::get('/outboundorder','OutboundOrderController@index')->name('outboundorder');
 
 Route::post('/storecsv','OutboundOrderController@storeCSVFile')->name('storecsvfile');
+
+Route::get('/stock','StockController@datatable')->name('stock_datatable');

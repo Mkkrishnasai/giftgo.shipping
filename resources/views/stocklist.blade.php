@@ -17,7 +17,7 @@
                         <input type="radio" name="type" value="Shipstation">
                     </div>
                 </div>
-            <div class="row">
+                <div class="row">
                     <div class="col-md-4" style="margin: 10px;">
                         <select class="selectpicker form-control" data-size="5" name="Username" title="Select Username">
                             @foreach($users as $user)
@@ -31,7 +31,7 @@
                     <div class="col-md-2" style="margin: 10px;">
                         <input type="submit" name="upload" class="btn btn-success" value="Upload">
                     </div>
-            </div>
+                </div>
             </form>
         </div>
     </div>
@@ -41,20 +41,19 @@
         </div>
         <div class="col-lg-12" style="margin-top: 40px;">
             <div class="table-responsive table-bordered">
-                <table id="outboundordertable" class="table table-hover dt-responsive" cellspacing="0" width="100%">
+                <table id="stocktable" class="table table-hover dt-responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th><input type="checkbox" name="checkall"></th>
-                        <th>Order ID</th>
+                        <th>SKU</th>
                         <th>Username</th>
-                        <th>Date Added</th>
-                        <th>Added By</th>
-                        <th>Date Updated</th>
-                        <th>Updated By</th>
-                        <th>Company Name</th>
-                        <th>Special Instruction</th>
-                        <th>Order Status</th>
-                        <th>Action</th>
+                        <th>Item Name</th>
+                        <th>Stock Item Type</th>
+                        <th>In Stock</th>
+                        <th>Stock Used</th>
+                        <th>Qty on Orders</th>
+                        <th>Stock Required</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
